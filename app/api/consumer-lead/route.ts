@@ -35,7 +35,10 @@ function formatLeadHtml(lead: Omit<ConsumerLeadInput, "website">) {
 
 async function deliverLead(lead: Omit<ConsumerLeadInput, "website">) {
   const apiKey = process.env.RESEND_API_KEY;
-  const notifyEmail = process.env.CONSUMER_LEAD_EMAIL || siteConfig.infoEmail;
+  const notifyEmails = (process.env.CONSUMER_LEAD_EMAIL || siteConfig.infoEmail)
+    .split(",")
+    .map((email) => email.trim())
+    .filter(Boolean);
 
   if (!apiKey) {
     console.warn("[consumer-lead] RESEND_API_KEY not set — lead was NOT emailed. Falling back to log only.", lead);
@@ -52,7 +55,7 @@ async function deliverLead(lead: Omit<ConsumerLeadInput, "website">) {
     },
     body: JSON.stringify({
       from: fromEmail,
-      to: [notifyEmail],
+      to: notifyEmails,
       reply_to: lead.email,
       subject: `New Consumer Lead — ${lead.category} — ${lead.zipCode}`,
       text: formatLeadText(lead),

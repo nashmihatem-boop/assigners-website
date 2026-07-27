@@ -41,7 +41,10 @@ function formatInquiryHtml(inquiry: Omit<BuyerIntakeInput, "company_website">) {
 
 async function deliverInquiry(inquiry: Omit<BuyerIntakeInput, "company_website">) {
   const apiKey = process.env.RESEND_API_KEY;
-  const notifyEmail = process.env.FORM_NOTIFICATION_EMAIL || siteConfig.infoEmail;
+  const notifyEmails = (process.env.FORM_NOTIFICATION_EMAIL || siteConfig.infoEmail)
+    .split(",")
+    .map((email) => email.trim())
+    .filter(Boolean);
 
   if (!apiKey) {
     // No email provider configured yet — log so the inquiry is at least visible in server logs
@@ -60,7 +63,7 @@ async function deliverInquiry(inquiry: Omit<BuyerIntakeInput, "company_website">
     },
     body: JSON.stringify({
       from: fromEmail,
-      to: [notifyEmail],
+      to: notifyEmails,
       reply_to: inquiry.workEmail,
       subject: `New Sales Inquiry — ${inquiry.vertical} — ${inquiry.companyName}`,
       text: formatInquiryText(inquiry),
