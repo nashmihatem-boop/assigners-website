@@ -14,7 +14,7 @@ const pageDescription =
   "Send us the leads you can't sell or use. We scrub them for compliance, work them through our calling platform, and pay you 40% revenue share on every sold warm transfer.";
 
 export const metadata = buildMetadata({
-  title: "Revenue Share — Monetize Your Unsold Leads",
+  title: "Revenue Share: Monetize Unsold Leads",
   description: pageDescription,
   path: "/revenue-share",
 });

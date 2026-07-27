@@ -10,7 +10,7 @@ import { buildMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/constants";
 
 export const metadata = buildMetadata({
-  title: "About Assigners",
+  title: "About Us: Performance Marketing & Lead Gen",
   description: "Assigners is a B2B lead and call acquisition brand powered by Quality Score LLC, built around source transparency and real-time delivery.",
   path: "/about",
 });
