@@ -13,7 +13,7 @@ const sora = Sora({ subsets: ["latin"], variable: "--font-sora", display: "swap"
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Web Form Leads, Warm Transfers & Inbound Calls`,
+    default: `Web Form Leads, Warm Transfers & Inbound Calls | ${siteConfig.name}`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
