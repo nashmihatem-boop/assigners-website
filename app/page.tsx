@@ -1,8 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionLabel } from "@/components/ui/SectionLabel";
-import { Hero } from "@/components/sections/Hero";
-import { PipelineFlow } from "@/components/sections/PipelineFlow";
+import { HeroSolutions } from "@/components/sections/HeroSolutions";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { StepCard } from "@/components/sections/StepCard";
 import { IndustryTabs } from "@/components/sections/IndustryTabs";
@@ -24,7 +23,7 @@ export const metadata = buildMetadata({
 export default function HomePage() {
   return (
     <>
-      <Hero
+      <HeroSolutions
         eyebrow="We Don't Just Sell Leads — We Assign Them"
         title={
           <>
@@ -34,7 +33,6 @@ export default function HomePage() {
         subhead="Every web form lead, warm transfer, and inbound call is matched against your campaign criteria and assigned to your team — not sold blind off a list. Sourced from owned-and-operated properties and vetted top-tier publishers."
         primaryCta={{ label: "Talk to Sales", href: "/talk-to-sales" }}
         secondaryCta={{ label: "See How It Works", href: "#how-it-works" }}
-        visual={<PipelineFlow />}
       />
 
       <TrustBar />
