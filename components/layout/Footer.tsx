@@ -33,6 +33,12 @@ export function Footer() {
                 </a>
               </li>
               <li>
+                Legal:{" "}
+                <a className="hover:text-white" href={`mailto:${siteConfig.legalEmail}`}>
+                  {siteConfig.legalEmail}
+                </a>
+              </li>
+              <li>
                 Phone:{" "}
                 <a className="hover:text-white" href={`tel:${siteConfig.businessPhoneHref}`}>
                   {siteConfig.businessPhone}

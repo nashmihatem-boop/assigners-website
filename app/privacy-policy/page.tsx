@@ -162,8 +162,8 @@ export default function PrivacyPolicyPage() {
           <LegalSection title="15. Your Rights & Requests">
             <p>
               To request access to, correction of, deletion of, or a portable copy of your information, email{" "}
-              <a href={`mailto:${siteConfig.infoEmail}`} className="text-[var(--color-blue)] underline">
-                {siteConfig.infoEmail}
+              <a href={`mailto:${siteConfig.legalEmail}`} className="text-[var(--color-blue)] underline">
+                {siteConfig.legalEmail}
               </a>{" "}
               or call{" "}
               <a href={`tel:${siteConfig.businessPhoneHref}`} className="text-[var(--color-blue)] underline">
@@ -192,8 +192,8 @@ export default function PrivacyPolicyPage() {
           <LegalSection title="18. Contact Us">
             <p>
               Questions about this Privacy Policy can be directed to{" "}
-              <a href={`mailto:${siteConfig.infoEmail}`} className="text-[var(--color-blue)] underline">
-                {siteConfig.infoEmail}
+              <a href={`mailto:${siteConfig.legalEmail}`} className="text-[var(--color-blue)] underline">
+                {siteConfig.legalEmail}
               </a>
               , {siteConfig.businessPhone}, or {siteConfig.officeHours}.
             </p>

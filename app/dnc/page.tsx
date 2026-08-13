@@ -42,8 +42,8 @@ export default function DncPage() {
           <LegalSection title="3. How to Request Suppression">
             <p>
               To request that a phone number be added to our internal Do Not Call list, email{" "}
-              <a href={`mailto:${siteConfig.infoEmail}`} className="text-[var(--color-blue)] underline">
-                {siteConfig.infoEmail}
+              <a href={`mailto:${siteConfig.legalEmail}`} className="text-[var(--color-blue)] underline">
+                {siteConfig.legalEmail}
               </a>
               , call {siteConfig.businessPhone}, or mail a written request to {siteConfig.businessAddressLines.join(", ")}
               {" "}with the phone number you&rsquo;d like suppressed.
@@ -80,8 +80,8 @@ export default function DncPage() {
           <LegalSection title="8. Contact">
             <p>
               Questions about this policy can be directed to{" "}
-              <a href={`mailto:${siteConfig.infoEmail}`} className="text-[var(--color-blue)] underline">
-                {siteConfig.infoEmail}
+              <a href={`mailto:${siteConfig.legalEmail}`} className="text-[var(--color-blue)] underline">
+                {siteConfig.legalEmail}
               </a>
               .
             </p>

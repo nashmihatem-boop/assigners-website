@@ -132,8 +132,8 @@ export default function TermsPage() {
           <LegalSection title="13. Contact Us">
             <p>
               Questions about these Terms can be directed to{" "}
-              <a href={`mailto:${siteConfig.infoEmail}`} className="text-[var(--color-blue)] underline">
-                {siteConfig.infoEmail}
+              <a href={`mailto:${siteConfig.legalEmail}`} className="text-[var(--color-blue)] underline">
+                {siteConfig.legalEmail}
               </a>
               .
             </p>

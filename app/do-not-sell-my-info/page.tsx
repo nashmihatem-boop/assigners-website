@@ -45,8 +45,8 @@ export default function DoNotSellPage() {
           <LegalSection title="3. How to Submit a Request">
             <p>
               Email{" "}
-              <a href={`mailto:${siteConfig.infoEmail}`} className="text-[var(--color-blue)] underline">
-                {siteConfig.infoEmail}
+              <a href={`mailto:${siteConfig.legalEmail}`} className="text-[var(--color-blue)] underline">
+                {siteConfig.legalEmail}
               </a>{" "}
               with the subject line &ldquo;Do Not Sell My Info,&rdquo; or call {siteConfig.businessPhone}
               {" "}during office hours ({siteConfig.officeHours}). Please include the name, email, and/or phone number
@@ -69,8 +69,8 @@ export default function DoNotSellPage() {
           <LegalSection title="6. Contact">
             <p>
               Questions about this page can be directed to{" "}
-              <a href={`mailto:${siteConfig.infoEmail}`} className="text-[var(--color-blue)] underline">
-                {siteConfig.infoEmail}
+              <a href={`mailto:${siteConfig.legalEmail}`} className="text-[var(--color-blue)] underline">
+                {siteConfig.legalEmail}
               </a>
               .
             </p>

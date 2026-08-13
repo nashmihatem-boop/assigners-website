@@ -85,8 +85,8 @@ export default function TcpaPage() {
           <LegalSection title="7. Questions">
             <p>
               Compliance questions can be directed to{" "}
-              <a href={`mailto:${siteConfig.infoEmail}`} className="text-[var(--color-blue)] underline">
-                {siteConfig.infoEmail}
+              <a href={`mailto:${siteConfig.legalEmail}`} className="text-[var(--color-blue)] underline">
+                {siteConfig.legalEmail}
               </a>{" "}
               or {siteConfig.businessPhone}.
             </p>

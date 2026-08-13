@@ -10,6 +10,7 @@ export const siteConfig = {
   businessPhoneHref: "+13024070876",
   businessAddressLines: ["2810 N Church St STE 88855", "Wilmington, DE 19802"],
   infoEmail: "info@assigners.com",
+  legalEmail: "legal@assigners.com",
   officeHours: "Monday–Friday, 8:00 AM–6:00 PM EST",
   stateOfFormation: "Delaware",
   governingLaw: "the State of Delaware",

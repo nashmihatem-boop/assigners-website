@@ -80,8 +80,8 @@ export default function CcpaPage() {
           <LegalSection title="5. How to Exercise Your Rights">
             <p>
               Submit a request by emailing{" "}
-              <a href={`mailto:${siteConfig.infoEmail}`} className="text-[var(--color-blue)] underline">
-                {siteConfig.infoEmail}
+              <a href={`mailto:${siteConfig.legalEmail}`} className="text-[var(--color-blue)] underline">
+                {siteConfig.legalEmail}
               </a>{" "}
               or calling {siteConfig.businessPhone}. We may need to verify your identity before completing certain
               requests, typically by matching the information you provide — such as your name and the email address or
@@ -114,8 +114,8 @@ export default function CcpaPage() {
               Utah — may have rights similar to those described above. Contact us using the information below and we
               will address your request under the law applicable to your state of residence. If we deny your request and
               your state&rsquo;s law provides a right to appeal, you may appeal by emailing{" "}
-              <a href={`mailto:${siteConfig.infoEmail}`} className="text-[var(--color-blue)] underline">
-                {siteConfig.infoEmail}
+              <a href={`mailto:${siteConfig.legalEmail}`} className="text-[var(--color-blue)] underline">
+                {siteConfig.legalEmail}
               </a>{" "}
               with &ldquo;Privacy Appeal&rdquo; in the subject line; we aim to respond to appeals within 45 days.
             </p>
@@ -124,8 +124,8 @@ export default function CcpaPage() {
           <LegalSection title="9. Contact">
             <p>
               Questions about this notice can be directed to{" "}
-              <a href={`mailto:${siteConfig.infoEmail}`} className="text-[var(--color-blue)] underline">
-                {siteConfig.infoEmail}
+              <a href={`mailto:${siteConfig.legalEmail}`} className="text-[var(--color-blue)] underline">
+                {siteConfig.legalEmail}
               </a>
               .
             </p>

@@ -139,8 +139,8 @@ export default function CompliancePage() {
             <div>
               <div className="font-mono text-[10px] uppercase tracking-wide text-[var(--color-navy)]">Compliance Contact</div>
               <div className="mt-1">
-                <a href={`mailto:${siteConfig.infoEmail}`} className="text-[var(--color-blue)] underline">
-                  {siteConfig.infoEmail}
+                <a href={`mailto:${siteConfig.legalEmail}`} className="text-[var(--color-blue)] underline">
+                  {siteConfig.legalEmail}
                 </a>
               </div>
             </div>

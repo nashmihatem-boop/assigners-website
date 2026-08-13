@@ -71,8 +71,8 @@ export default function AbaDisclaimerPage() {
           <LegalSection title="7. Contact">
             <p>
               Questions about this disclosure can be directed to{" "}
-              <a href={`mailto:${siteConfig.infoEmail}`} className="text-[var(--color-blue)] underline">
-                {siteConfig.infoEmail}
+              <a href={`mailto:${siteConfig.legalEmail}`} className="text-[var(--color-blue)] underline">
+                {siteConfig.legalEmail}
               </a>
               .
             </p>
