@@ -89,7 +89,7 @@ export function ServiceQuoteContent({
               {category.articles.slice(0, 6).map((a) => (
                 <Link
                   key={a.slug}
-                  href={`https://www.assigners.com/learning-center/home-services/${category.slug}/${a.slug}`}
+                  href={`/learning-center/home-services/${category.slug}/${a.slug}`}
                   className="group flex items-center justify-between gap-3 rounded-xl border border-[var(--color-border)] bg-white p-5 transition-colors hover:border-[var(--color-blue)]"
                 >
                   <span className="font-heading text-base font-bold text-[var(--color-navy)]">{a.title}</span>

@@ -10,7 +10,7 @@ export default function HomeServicesHubLayout({ children }: { children: React.Re
         <Container className="flex h-20 items-center justify-between">
           <Logo variant="full" height={40} href="/home-services-hub" />
           <Link
-            href="https://www.assigners.com"
+            href="/"
             className="font-mono text-xs font-medium uppercase tracking-wide text-[var(--color-muted)] hover:text-[var(--color-blue)]"
           >
             For Businesses &amp; Contractors →
