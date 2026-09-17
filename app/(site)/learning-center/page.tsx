@@ -10,7 +10,7 @@ import { buildMetadata } from "@/lib/metadata";
 
 export const metadata = buildMetadata({
   title: "Learning Center",
-  description: "Illustrative cost guides and side-by-side comparisons across Legal, Financial Services, Insurance, Home Services, Real Estate, and Education.",
+  description: "Illustrative cost guides and side-by-side comparisons across Legal, Financial Services, Insurance, and Home Services.",
   path: "/learning-center",
 });
 

@@ -15,7 +15,7 @@ import { whyUs, howItWorks } from "@/lib/constants";
 import { buildMetadata } from "@/lib/metadata";
 
 export const metadata = buildMetadata({
-  title: "Web Form Leads & Warm Transfers | Assigners",
+  title: "Web Form Leads & Warm Transfers",
   description:
     "Assigners delivers exclusive web form leads, warm transfers, and inbound calls sourced from owned-and-operated properties and vetted top-tier publishers — delivered in real time.",
   path: "/",

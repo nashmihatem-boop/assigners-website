@@ -64,6 +64,7 @@ export const footerNav = {
   ],
   company: [
     { label: "About", href: "/about" },
+    { label: "Home Services", href: "/home-services-hub" },
     { label: "Industries", href: "/industries" },
     { label: "Coverage", href: "/coverage" },
     { label: "Learning Center", href: "/learning-center" },
@@ -140,20 +141,6 @@ export const industries: Industry[] = [
     slug: "home-services",
     description: "Roofing, solar, HVAC, and remodeling homeowners ready to talk to a contractor.",
     keywords: ["roof replacement cost", "solar panel installers near me", "emergency hvac repair"],
-  },
-  {
-    index: "05",
-    name: "Real Estate",
-    slug: "real-estate",
-    description: "Home buyers, sellers, and investors ready to connect with an agent or lender.",
-    keywords: ["realtors near me", "sell my house fast", "mortgage pre-approval"],
-  },
-  {
-    index: "06",
-    name: "Education",
-    slug: "education",
-    description: "Degree-seekers and career changers researching accredited schools and training programs.",
-    keywords: ["online degree programs", "vocational training near me", "MBA programs"],
   },
 ];
 

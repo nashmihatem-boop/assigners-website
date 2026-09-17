@@ -13,7 +13,7 @@ import { buildMetadata } from "@/lib/metadata";
 export const metadata = buildMetadata({
   title: "Industries We Serve",
   description:
-    "Assigners delivers web form leads, warm transfers, and inbound calls across legal, financial services, insurance, home services, real estate, and education.",
+    "Assigners delivers web form leads, warm transfers, and inbound calls across legal, financial services, insurance, and home services.",
   path: "/industries",
 });
 
@@ -44,7 +44,7 @@ export default function IndustriesPage() {
             Industries <span className="text-gradient-brand">we serve.</span>
           </h1>
           <p className="mt-4 max-w-xl text-lg leading-relaxed text-[var(--color-muted)]">
-            Flexible web form lead, warm transfer, and inbound call programs across our six core verticals.
+            Flexible web form lead, warm transfer, and inbound call programs across our core verticals.
           </p>
         </Container>
       </section>

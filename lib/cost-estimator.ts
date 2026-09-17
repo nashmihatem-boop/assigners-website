@@ -1,7 +1,5 @@
 import { financialServicesCategories } from "@/lib/cost-data/financial-services";
 import { insuranceCategories } from "@/lib/cost-data/insurance";
-import { realEstateCategories } from "@/lib/cost-data/real-estate";
-import { educationCategories } from "@/lib/cost-data/education";
 
 export type CostOption = {
   name: string;
@@ -2627,14 +2625,6 @@ export const costEstimator: CostIndustrySection[] = [
   {
     industrySlug: "insurance",
     categories: insuranceCategories,
-  },
-  {
-    industrySlug: "real-estate",
-    categories: realEstateCategories,
-  },
-  {
-    industrySlug: "education",
-    categories: educationCategories,
   },
 ];
 

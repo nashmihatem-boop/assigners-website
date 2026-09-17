@@ -4,15 +4,7 @@ import { z } from "zod";
 // must start 2–9 (excludes N11 service codes and non-NANP inputs).
 export const US_PHONE_REGEX = /^(?:\+?1[\s.-]?)?\(?([2-9]\d{2})\)?[\s.-]?([2-9]\d{2})[\s.-]?(\d{4})$/;
 
-export const verticals = [
-  "Legal",
-  "Financial Services",
-  "Insurance",
-  "Home Services",
-  "Real Estate",
-  "Education",
-  "Other",
-] as const;
+export const verticals = ["Legal", "Financial Services", "Insurance", "Home Services", "Other"] as const;
 
 export const productInterests = [
   "Warm Transfers",

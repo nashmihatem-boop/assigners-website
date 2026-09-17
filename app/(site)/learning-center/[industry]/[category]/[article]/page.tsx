@@ -8,8 +8,10 @@ import { Faq } from "@/components/ui/Faq";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { CTABand } from "@/components/sections/CTABand";
 import { ConsumerLeadForm } from "@/components/forms/ConsumerLeadForm";
+import { LeadFormsWidget } from "@/components/forms/LeadFormsWidget";
 import { industries } from "@/lib/constants";
 import { costEstimator, getCostCategory, getCostArticle, getCostIndustry, type CostOption } from "@/lib/cost-estimator";
+import { leadFormsTokens } from "@/lib/lead-forms-tokens";
 import { buildMetadata } from "@/lib/metadata";
 import { faqJsonLd } from "@/lib/structured-data";
 
@@ -121,7 +123,11 @@ export default async function LearningCenterArticlePage({
             </div>
 
             <div className="lg:sticky lg:top-24">
-              <ConsumerLeadForm industry={industry.name} category={category.title} categories={categoryTitles} />
+              {leadFormsTokens[category.slug] ? (
+                <LeadFormsWidget formToken={leadFormsTokens[category.slug]} />
+              ) : (
+                <ConsumerLeadForm industry={industry.name} category={category.title} categories={categoryTitles} />
+              )}
             </div>
           </div>
         </Container>
