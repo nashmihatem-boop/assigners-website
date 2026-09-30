@@ -17,7 +17,10 @@ export default function DoNotSellPage() {
       <Container className="max-w-3xl">
         <Breadcrumbs items={[{ name: "Do Not Sell My Info", path: "/do-not-sell-my-info" }]} />
 
-        <h1 className="font-heading text-3xl font-bold text-[var(--color-navy)] sm:text-4xl">Do Not Sell or Share My Personal Information</h1>
+        <p className="mt-4 font-mono text-xs font-medium uppercase tracking-wide text-[var(--color-muted)]">
+          Assigners by Quality Score LLC
+        </p>
+        <h1 className="mt-1 font-heading text-3xl font-bold text-[var(--color-navy)] sm:text-4xl">Do Not Sell or Share My Personal Information</h1>
         <p className="mt-2 text-sm text-[var(--color-muted)]">Last updated: {siteConfig.legalLastUpdated}</p>
 
         <div className="mt-8 flex flex-col gap-8 text-sm leading-relaxed text-[var(--color-muted)] sm:text-base">
@@ -29,6 +32,11 @@ export default function DoNotSellPage() {
                 CCPA Notice
               </a>{" "}
               for the full list of California privacy rights.
+            </p>
+            <p className="mt-2">
+              We also honor the Global Privacy Control (GPC) signal as a valid opt-out request. If your browser sends
+              a GPC signal when you visit this site, we treat it as an opt-out of the sale or sharing of personal
+              information collected during that visit, without requiring you to submit the separate request below.
             </p>
           </LegalSection>
 

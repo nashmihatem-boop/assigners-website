@@ -14,7 +14,7 @@ export const siteConfig = {
   officeHours: "Monday–Friday, 8:00 AM–6:00 PM EST",
   stateOfFormation: "Delaware",
   governingLaw: "the State of Delaware",
-  legalLastUpdated: "January 16, 2026",
+  legalLastUpdated: "June 10, 2026",
 };
 
 export type NavChild = { label: string; href: string; description: string };

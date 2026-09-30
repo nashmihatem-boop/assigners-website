@@ -17,7 +17,10 @@ export default function TermsPage() {
       <Container className="max-w-3xl">
         <Breadcrumbs items={[{ name: "Terms of Service", path: "/terms" }]} />
 
-        <h1 className="font-heading text-3xl font-bold text-[var(--color-navy)] sm:text-4xl">Terms of Service</h1>
+        <p className="mt-4 font-mono text-xs font-medium uppercase tracking-wide text-[var(--color-muted)]">
+          Assigners by Quality Score LLC
+        </p>
+        <h1 className="mt-1 font-heading text-3xl font-bold text-[var(--color-navy)] sm:text-4xl">Terms of Service</h1>
         <p className="mt-2 text-sm text-[var(--color-muted)]">Last updated: {siteConfig.legalLastUpdated}</p>
 
         <div className="mt-8 flex flex-col gap-8 text-sm leading-relaxed text-[var(--color-muted)] sm:text-base">
@@ -117,11 +120,46 @@ export default function TermsPage() {
             </p>
           </LegalSection>
 
-          <LegalSection title="11. Governing Law">
-            <p>These Terms are governed by the laws of {siteConfig.governingLaw}, without regard to conflict-of-law principles.</p>
+          <LegalSection title="11. Governing Law & Venue">
+            <p>
+              These Terms are governed by the laws of {siteConfig.governingLaw}, without regard to conflict-of-law principles.
+              Subject to Section 12 (Dispute Resolution), you agree that any legal action or proceeding arising out of or
+              relating to these Terms that is not subject to arbitration will be brought exclusively in the state or
+              federal courts located in New Castle County, Delaware, and you consent to the personal jurisdiction of
+              those courts.
+            </p>
           </LegalSection>
 
-          <LegalSection title="12. Changes to These Terms">
+          <LegalSection title="12. Dispute Resolution">
+            <p>
+              Except as described below, any dispute, claim, or controversy arising out of or relating to these Terms or
+              your use of this site will be resolved by binding arbitration administered by the American Arbitration
+              Association (AAA) under its rules then in effect, rather than in court. Either party may instead bring an
+              individual claim in small claims court where the claim qualifies. Arbitration will proceed on an individual
+              basis only — class, collective, and representative actions or arbitrations are not permitted, and the
+              arbitrator has no authority to combine more than one person&rsquo;s claims into a single proceeding. Nothing
+              in this section prevents either party from seeking injunctive or other equitable relief in court to protect
+              its intellectual property or confidential information.
+            </p>
+          </LegalSection>
+
+          <LegalSection title="13. Statute of Limitations">
+            <p>
+              To the extent permitted by applicable law, any claim or cause of action arising out of or related to your
+              use of this site or these Terms must be filed within one (1) year after the claim or cause of action
+              arose, or it will be permanently barred.
+            </p>
+          </LegalSection>
+
+          <LegalSection title="14. Severability">
+            <p>
+              If any provision of these Terms is found to be invalid or unenforceable, that provision will be limited or
+              eliminated to the minimum extent necessary so that the remaining provisions of these Terms will remain in
+              full force and effect.
+            </p>
+          </LegalSection>
+
+          <LegalSection title="15. Changes to These Terms">
             <p>
               We may update these Terms of Service from time to time. Changes are effective once posted to this page with
               an updated &ldquo;Last updated&rdquo; date. Continued use of this site after changes are posted constitutes
@@ -129,7 +167,7 @@ export default function TermsPage() {
             </p>
           </LegalSection>
 
-          <LegalSection title="13. Contact Us">
+          <LegalSection title="16. Contact Us">
             <p>
               Questions about these Terms can be directed to{" "}
               <a href={`mailto:${siteConfig.legalEmail}`} className="text-[var(--color-blue)] underline">

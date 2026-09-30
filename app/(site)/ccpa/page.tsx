@@ -17,7 +17,10 @@ export default function CcpaPage() {
       <Container className="max-w-3xl">
         <Breadcrumbs items={[{ name: "CCPA", path: "/ccpa" }]} />
 
-        <h1 className="font-heading text-3xl font-bold text-[var(--color-navy)] sm:text-4xl">CCPA Notice</h1>
+        <p className="mt-4 font-mono text-xs font-medium uppercase tracking-wide text-[var(--color-muted)]">
+          Assigners by Quality Score LLC
+        </p>
+        <h1 className="mt-1 font-heading text-3xl font-bold text-[var(--color-navy)] sm:text-4xl">CCPA Notice</h1>
         <p className="mt-2 text-sm text-[var(--color-muted)]">Last updated: {siteConfig.legalLastUpdated}</p>
 
         <div className="mt-8 flex flex-col gap-8 text-sm leading-relaxed text-[var(--color-muted)] sm:text-base">
@@ -86,7 +89,14 @@ export default function CcpaPage() {
               or calling {siteConfig.businessPhone}. We may need to verify your identity before completing certain
               requests, typically by matching the information you provide — such as your name and the email address or
               phone number associated with your submission — against our records. We will not fulfill a request we
-              cannot reasonably verify.
+              cannot reasonably verify. You are not required to create an account with us to submit or have a request
+              fulfilled.
+            </p>
+            <p className="mt-2">
+              We also recognize the Global Privacy Control (GPC) signal as a valid method of submitting a request to
+              opt out of the sale or sharing of personal information. If your browser or a browser extension sends a
+              GPC signal, we will treat it as an opt-out request for the sale or sharing of personal information
+              collected during that browsing session on the device and browser that sent it.
             </p>
           </LegalSection>
 

@@ -17,7 +17,10 @@ export default function AbaDisclaimerPage() {
       <Container className="max-w-3xl">
         <Breadcrumbs items={[{ name: "ABA Disclaimer", path: "/aba-disclaimer" }]} />
 
-        <h1 className="font-heading text-3xl font-bold text-[var(--color-navy)] sm:text-4xl">ABA Disclaimer</h1>
+        <p className="mt-4 font-mono text-xs font-medium uppercase tracking-wide text-[var(--color-muted)]">
+          Assigners by Quality Score LLC
+        </p>
+        <h1 className="mt-1 font-heading text-3xl font-bold text-[var(--color-navy)] sm:text-4xl">ABA Disclaimer</h1>
         <p className="mt-2 text-sm text-[var(--color-muted)]">Last updated: {siteConfig.legalLastUpdated}</p>
 
         <div className="mt-8 flex flex-col gap-8 text-sm leading-relaxed text-[var(--color-muted)] sm:text-base">

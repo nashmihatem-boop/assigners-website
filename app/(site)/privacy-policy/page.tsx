@@ -17,7 +17,10 @@ export default function PrivacyPolicyPage() {
       <Container className="max-w-3xl">
         <Breadcrumbs items={[{ name: "Privacy Policy", path: "/privacy-policy" }]} />
 
-        <h1 className="font-heading text-3xl font-bold text-[var(--color-navy)] sm:text-4xl">Privacy Policy</h1>
+        <p className="mt-4 font-mono text-xs font-medium uppercase tracking-wide text-[var(--color-muted)]">
+          Assigners by Quality Score LLC
+        </p>
+        <h1 className="mt-1 font-heading text-3xl font-bold text-[var(--color-navy)] sm:text-4xl">Privacy Policy</h1>
         <p className="mt-2 text-sm text-[var(--color-muted)]">Last updated: {siteConfig.legalLastUpdated}</p>
 
         <div className="mt-8 flex flex-col gap-8 text-sm leading-relaxed text-[var(--color-muted)] sm:text-base">
@@ -97,11 +100,27 @@ export default function PrivacyPolicyPage() {
             </ul>
             <p className="mt-2">
               We require service providers who process personal information on our behalf to handle it consistent with this
-              Privacy Policy and applicable law.
+              Privacy Policy and applicable law. Where required by applicable law, we enter into written data processing
+              agreements with service providers and partners who process personal information on our behalf.
             </p>
           </LegalSection>
 
-          <LegalSection title="9. Data Retention">
+          <LegalSection title="9. Vertical-Specific Notices (Financial Services & Insurance)">
+            <p>
+              Where a submission relates to our Financial Services vertical, information may be handled in a manner
+              intended to align with the Gramm-Leach-Bliley Act (GLBA) and related federal lending and credit laws,
+              including the Equal Credit Opportunity Act (ECOA), the Fair Credit Reporting Act (FCRA), Regulation Z
+              (Truth in Lending), and, for mortgage-related inquiries, Section 8 of the Real Estate Settlement
+              Procedures Act (RESPA).
+            </p>
+            <p className="mt-2">
+              Where a submission relates to Medicare-related insurance products, we require our Medicare marketing
+              partners to comply with CMS marketing guidelines, including required Third-Party Marketing Organization
+              (TPMO) disclaimers and applicable call-recording and retention requirements.
+            </p>
+          </LegalSection>
+
+          <LegalSection title="10. Data Retention">
             <p>
               We retain information for 5 years, or as required by applicable law. How long we keep a given piece of
               information depends on its sensitivity, the purpose it was collected for, and whether a longer period is
@@ -109,7 +128,7 @@ export default function PrivacyPolicyPage() {
             </p>
           </LegalSection>
 
-          <LegalSection title="10. Sensitive Information">
+          <LegalSection title="11. Sensitive Information">
             <p>
               Our forms are not designed to collect sensitive personal information — such as health data, racial or ethnic
               origin, religious beliefs, sexual orientation, or biometric data. Please do not submit this type of
@@ -118,7 +137,7 @@ export default function PrivacyPolicyPage() {
             </p>
           </LegalSection>
 
-          <LegalSection title="11. Information You Submit About Others">
+          <LegalSection title="12. Information You Submit About Others">
             <p>
               If you submit contact information belonging to someone other than yourself, you confirm that you have that
               person&rsquo;s permission to share it with us. We don&rsquo;t independently verify this, and you&rsquo;re
@@ -127,7 +146,7 @@ export default function PrivacyPolicyPage() {
             </p>
           </LegalSection>
 
-          <LegalSection title="12. Children's Privacy">
+          <LegalSection title="13. Children's Privacy">
             <p>
               This site is intended for business use by adults and is not directed to children under 16. We do not
               knowingly collect personal information from children under 16; if we learn that we have, we will take steps
@@ -135,7 +154,7 @@ export default function PrivacyPolicyPage() {
             </p>
           </LegalSection>
 
-          <LegalSection title="13. Security & Data Breach Notification">
+          <LegalSection title="14. Security & Data Breach Notification">
             <p>
               We maintain commercially reasonable technical and administrative safeguards designed to protect your
               information from unauthorized access or disclosure. No method of transmission or storage is completely
@@ -144,7 +163,7 @@ export default function PrivacyPolicyPage() {
             </p>
           </LegalSection>
 
-          <LegalSection title="14. California Residents (CCPA/CPRA)">
+          <LegalSection title="15. California Residents (CCPA/CPRA)">
             <p>
               California residents have specific rights regarding their personal information, including the right to know,
               delete, correct, and opt out of certain disclosures of personal information. See our{" "}
@@ -159,7 +178,7 @@ export default function PrivacyPolicyPage() {
             </p>
           </LegalSection>
 
-          <LegalSection title="15. Your Rights & Requests">
+          <LegalSection title="16. Your Rights & Requests">
             <p>
               To request access to, correction of, deletion of, or a portable copy of your information, email{" "}
               <a href={`mailto:${siteConfig.legalEmail}`} className="text-[var(--color-blue)] underline">
@@ -177,7 +196,7 @@ export default function PrivacyPolicyPage() {
             </p>
           </LegalSection>
 
-          <LegalSection title="16. International Visitors">
+          <LegalSection title="17. International Visitors">
             <p>
               This Site is operated in the United States. If you access it from outside the United States, understand
               that your information will be transferred to, processed, and stored in the United States, where data
@@ -185,11 +204,11 @@ export default function PrivacyPolicyPage() {
             </p>
           </LegalSection>
 
-          <LegalSection title="17. Governing Law">
+          <LegalSection title="18. Governing Law">
             <p>This Privacy Policy is governed by the laws of {siteConfig.governingLaw}, without regard to conflict-of-law principles.</p>
           </LegalSection>
 
-          <LegalSection title="18. Contact Us">
+          <LegalSection title="19. Contact Us">
             <p>
               Questions about this Privacy Policy can be directed to{" "}
               <a href={`mailto:${siteConfig.legalEmail}`} className="text-[var(--color-blue)] underline">

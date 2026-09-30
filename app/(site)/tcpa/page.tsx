@@ -17,7 +17,10 @@ export default function TcpaPage() {
       <Container className="max-w-3xl">
         <Breadcrumbs items={[{ name: "TCPA Compliance", path: "/tcpa" }]} />
 
-        <h1 className="font-heading text-3xl font-bold text-[var(--color-navy)] sm:text-4xl">TCPA Compliance</h1>
+        <p className="mt-4 font-mono text-xs font-medium uppercase tracking-wide text-[var(--color-muted)]">
+          Assigners by Quality Score LLC
+        </p>
+        <h1 className="mt-1 font-heading text-3xl font-bold text-[var(--color-navy)] sm:text-4xl">TCPA Compliance</h1>
         <p className="mt-2 text-sm text-[var(--color-muted)]">Last updated: {siteConfig.legalLastUpdated}</p>
 
         <div className="mt-8 flex flex-col gap-8 text-sm leading-relaxed text-[var(--color-muted)] sm:text-base">
@@ -74,7 +77,16 @@ export default function TcpaPage() {
             </p>
           </LegalSection>
 
-          <LegalSection title="6. Buyer & Partner Obligations">
+          <LegalSection title="6. Vertical-Specific Calling Rules">
+            <p>
+              For Insurance vertical campaigns involving Medicare-related products, buyers and partners must comply with
+              CMS Medicare marketing rules, including required Third-Party Marketing Organization (TPMO) disclaimers,
+              applicable call-recording and retention requirements, and the 48-hour contact rule following a Scope of
+              Appointment, where applicable.
+            </p>
+          </LegalSection>
+
+          <LegalSection title="7. Buyer & Partner Obligations">
             <p>
               Buyers are responsible for ensuring their own outbound communications comply with the TCPA and applicable state
               telemarketing laws, including honoring opt-out requests they receive directly. Publishers and traffic partners are
@@ -82,7 +94,7 @@ export default function TcpaPage() {
             </p>
           </LegalSection>
 
-          <LegalSection title="7. Questions">
+          <LegalSection title="8. Questions">
             <p>
               Compliance questions can be directed to{" "}
               <a href={`mailto:${siteConfig.legalEmail}`} className="text-[var(--color-blue)] underline">
